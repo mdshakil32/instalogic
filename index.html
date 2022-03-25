@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/bcc94440c0.js" crossorigin="anonymous"></script>
+    <!-- css  -->
+    <link rel="stylesheet" href="style.css">
+    <title>Instalogic</title>
+</head>
+<body>
+    <header>
+        <div class="top-header">
+            <nav class="navbar">
+                <!-- <i class="fas fa-star"></i> -->
+                <!-- LOGO -->
+                <div class="logo">MUO</div>
+                <!-- NAVIGATION MENU -->
+                <ul class="nav-links">
+                    <!-- USING CHECKBOX HACK -->
+                    <input type="checkbox" id="checkbox_toggle" />
+                    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                    <!-- NAVIGATION MENUS -->
+                    <div class="menu" id="menu">
+                        <li class="nav-link active">
+                            <p class="nav-star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </p>
+                            <a  href="/" onclick="anchorClick(event);">Home</a>
+                        </li>
+                        <li class="nav-link">
+                            <p class="nav-star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </p>
+                            <a  href="/About" onclick="anchorClick(event);">About</a></li>
+
+                        <li class="nav-link services">
+                            <p class="nav-star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </p>
+
+                            <a href="/" onclick="anchorClick(event);">Products</a>
+                            <!-- DROPDOWN MENU -->
+                            <!-- <ul class="dropdown">
+                                <li><a href="/">Dropdown 1 </a></li>
+                                <li><a href="/">Dropdown 2</a></li>
+                                <li><a href="/">Dropdown 2</a></li>
+                                <li><a href="/">Dropdown 3</a></li>
+                                <li><a href="/">Dropdown 4</a></li>
+                            </ul> -->
+                        </li>
+                        <li class="nav-link">
+                            <p class="nav-star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </p>
+                            <a href="/" onclick="anchorClick(event);">Rentals</a></li>
+                        <li class="nav-link">
+                            <p class="nav-star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </p>
+                            <a href="/" onclick="anchorClick(event);">Services</a></li>
+                        <li class="nav-link">
+                            <p class="nav-star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </p>
+                            <a href="/" onclick="anchorClick(event);">Resources</a></li>
+                        <li class="nav-link">
+                            <p class="nav-star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </p>
+                            <a href="#contact" onclick="anchorClick(event);" >Contact</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- ======== one stop ========= -->
+    <!-- <div class="one-stop">
+        <div class="onestop-wrapper">
+            <div class="one-stop-left">
+                <img src="/assets/onestop/Assessment_PSD_2.png" alt="">
+            </div>
+            <div class="one-stop-right">
+                <h1>Your One Stop Safety Shop</h1>
+                <p>Accidents or injuries are easily avoided with the right knowledge, advice, and equipment in the workplace. Orion Safety
+                Ltd. located in Calgary, Alberta is an established Western Canadian leader in safety products and services since 2007.
+                With over 30 years of safety experience, our experts work closely with you to ensure you have the tools, knowledge, and
+                procedures needed to ensure the well-being of your staff. <br><br>
+                
+                Whether it’s personal protective equipment, SCBA, fire prevention, gas detection, fall protection or emergency rescue
+                gear, safety in your environment is our goal. Give us a call anytime. We appreciate your business and look forward to
+                hearing from you!</p>
+
+                <button class="learn-more-btn">Learn More</button>
+                <button class="getin-touch-btn">Get In Touch</button>
+            </div>
+        </div>
+    </div> -->
+
+
+    <!-- ========= quick links ==========  -->
+    <section class="quick-links">
+        <div class="quick-links-wrapper">
+            <div class="single-quicklink quicklink-left">
+                <img src="/assets/quicklinks/icon1.png">
+                <h1>Sales</h1>
+                <p>We believe in providing our customers with a high quality product at an affordable price. We use only quality name brand
+                products.</p>
+            </div>
+            <div class="single-quicklink quicklink-middle">
+                <img src="/assets/quicklinks/icon2.png">
+                <h1>Rentals</h1>
+                <p>We know it is not always economical to purchase new equipment, that's why we offer a variety of rental options with
+                daily, weekly and monthly rates.</p>
+            </div>
+            <div class="single-quicklink quicklink-right">
+                <img src="/assets/quicklinks/icon3.png">
+                <h1>Service</h1>
+                <p>We're not just your average safety store! Our experts know what you're looking for and we can show you how to use
+                it—properly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== certification-calibration ========== -->
+    <section class="certification-calibration">
+        <div class="certification-calibration-wrapper">
+            <div class="certification">
+                <img src="/assets/certification-calibration/Assessment_PSD_2 (3).png" alt="">
+                <h1>Certification</h1>
+                <p>We’re not just your average safety store! Our experts know what you’re looking for and we can show you how to use
+                it—properly. We also recertify what we sell. Check out our list of what we can recertify in our shop.</p>
+                <button class="learn-more-btn">Learn More</button>
+            </div>
+            <div class="calibration">
+                <img src="/assets/certification-calibration/Assessment_PSD_2 (4).png" alt="">
+                <h1>Calibration</h1>
+                <p>You expect to receive accurate performance from your detectors and monitors so you can trust your readings. We can
+                service, repair and calibrate all varieties of gas monitors such as MSA, BW, and Dräger.</p>
+                <button class="learn-more-btn">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- =========== categories ==========  -->
+    <section class="category">
+        <div class="category-wrapper">
+            <div class="category-left">
+                <img src="/assets/categories/Assessment_PSD_3.png" alt="">
+            </div>
+            <div class="category-left-sm">
+                <h1>Product</h1>
+                <p>Categories</p>
+            </div>
+            <div class="category-right">
+                <div class="single-category">
+                    <img src="/assets/categories/Assessment_PSD_2 (5).png" alt="">
+                    <h1>Fire Suppresion</h1>
+                    <p>Duis aute irure dolor reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+                <div class="single-category">
+                    <img src="/assets/categories/Assessment_PSD_2 (6).png" alt="">
+                    <h1>First Aid</h1>
+                    <p>Duis aute irure dolor reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+                <div class="single-category">
+                    <img src="/assets/categories/Assessment_PSD_2 (7).png" alt="">
+                    <h1>Safety Apparel</h1>
+                    <p>Duis aute irure dolor reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+                <div class="single-category">
+                    <img src="/assets/categories/Assessment_PSD_2 (8).png" alt="">
+                    <h1>Visibility Aids</h1>
+                    <p>Duis aute irure dolor reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+            </div>
+        </div>
+        <button class="view-more-btn">View More</button>
+    </section>
+
+    <!-- =========== protection ==========  -->
+
+    <!-- =========== instagram =========  -->
+    <section class="instagram">
+        <img src="/assets/footer/instagram.png" alt="">
+    </section>
+
+    <!-- ========== newsletter ========== -->
+    <section class="newsletter">
+        <div class="common-wrapper newsletter-inner">
+            <h1>Newletter</h1>
+            <p>Stay connected! Subscribe to our newsletter to stay informed of all the latest products and services.</p>
+            <button class="signup-btn">Sign Up</button>
+        </div>
+    </section>
+
+    <!-- ========== contact ==========  -->
+    <section class="contact" id="contact">
+        <div class="common-wrapper contact-inner">
+            
+            <!-- contact left  -->
+            <div class="contact-left common-contact-table" >
+                <table >
+                    <tr class="mb-15">
+                        <td class=" contact-title">Office</td>
+                        <td class="contact-detail pb-40">1161 40th Avenue NE<br>Calgary, Alberta T2E 6M9 </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class=" contact-title">Phone</td>
+                        <td>(403) 769 - 1799</td>
+                    </tr>
+                    <tr>
+                        <td class="contact-title">Email</td>
+                        <td class="email">info@orionsafety.ca</td>
+                    </tr>
+                </table>
+                
+            </div>
+            
+            <!-- contact middle  -->
+            <div class="contact-middle common-contact-table">
+                
+                <table>
+                    <tr>
+                        <td class="contact-title">Weekdays</td>
+                        <td>8:00am - 4:30pm</td>
+                    </tr>
+                    <tr>
+                        <td class=" contact-title">Weekends</td>
+                        <td class="pb-75">Call for hours</td>
+                    </tr>
+                    <tr>
+                        <td class=" contact-title">Social Media</td>
+                        <td class="social-media">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- contact right  -->
+            <div class="contact-right">
+                <img src="/assets/footer/logo.png" alt="">
+            </div>
+
+            
+
+        </div>
+    </section>
+
+    <!-- ======== footer =========  -->
+    <footer>
+       <div class="common-wrapper footer-inner">
+            <span>Powered by Instalogic Inc.</span>
+            <span class="footer-right">© 2020 Orion Safety Equipment Ltd.</span>
+       </div>
+    </footer>
+
+    <!-- <script src="script.js"></script> -->
+    <script>
+       function anchorClick(e) {
+            //Do some stuff 
+            e.preventDefault();
+    }  
+
+    // active 
+
+    var menu = document.getElementById("menu");
+        var links = menu.getElementsByClassName("nav-link");
+        for (var i = 0; i < links.length; i++) {
+            links[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+</body>
+</html>
