@@ -8,91 +8,137 @@
     <!-- font awesome  -->
     <script src="https://kit.fontawesome.com/bcc94440c0.js" crossorigin="anonymous"></script>
     <!-- css  -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/onestop.css">
+    <link rel="stylesheet" href="/styles/quicklinks.css">
+    <link rel="stylesheet" href="/styles/certification.css">
+    <link rel="stylesheet" href="/styles/categories.css">
+    <link rel="stylesheet" href="/styles/contact.css">
+    <link rel="stylesheet" href="/styles/style.css">
     <title>Instalogic</title>
 </head>
 <body>
-    <header>
-        <div class="top-header">
-            <nav class="navbar">
-                <!-- <i class="fas fa-star"></i> -->
-                <!-- LOGO -->
-                <div class="logo">MUO</div>
-                <!-- NAVIGATION MENU -->
-                <ul class="nav-links">
-                    <!-- USING CHECKBOX HACK -->
-                    <input type="checkbox" id="checkbox_toggle" />
-                    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-                    <!-- NAVIGATION MENUS -->
-                    <div class="menu" id="menu">
-                        <li class="nav-link active">
-                            <p class="nav-star">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </p>
-                            <a  href="/" onclick="anchorClick(event);">Home</a>
-                        </li>
-                        <li class="nav-link">
-                            <p class="nav-star">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </p>
-                            <a  href="/About" onclick="anchorClick(event);">About</a></li>
+    <!-- ============ header =============  -->
+    <header class="slider">
+        <!-- header top  -->
+        <div class="header-top">
+            <div class="common-wrapper header-top-inner">
+                <p class="topheader-left">
+                    <i class="fa-solid fa-location-dot text-red pr-10"></i>
+                    1161 40th Ave NE • Calgary, Alberta
+                </p>
 
-                        <li class="nav-link services">
-                            <p class="nav-star">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </p>
+                <div class="topheader-right">
+                    <p class="top-phone">
+                        <i class="fa-solid fa-phone text-red pr-10"></i>
+                        (403) 769 - 1799
+                    </p>
+                    <p class="top-email">
+                        <i class="fa-regular fa-envelope text-red pr-10"></i>
+                        Email Us
+                    </p>
+                    <p class="top-social-media">
+                        <i class="fa-brands fa-facebook-f pr-25"></i>
+                        <i class="fa-brands fa-instagram pr-25"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </p>
+                </div>
+            </div>
+            
+        </div>
 
-                            <a href="/" onclick="anchorClick(event);">Products</a>
-                            <!-- DROPDOWN MENU -->
-                            <!-- <ul class="dropdown">
-                                <li><a href="/">Dropdown 1 </a></li>
-                                <li><a href="/">Dropdown 2</a></li>
-                                <li><a href="/">Dropdown 2</a></li>
-                                <li><a href="/">Dropdown 3</a></li>
-                                <li><a href="/">Dropdown 4</a></li>
-                            </ul> -->
-                        </li>
-                        <li class="nav-link">
-                            <p class="nav-star">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </p>
-                            <a href="/" onclick="anchorClick(event);">Rentals</a></li>
-                        <li class="nav-link">
-                            <p class="nav-star">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </p>
-                            <a href="/" onclick="anchorClick(event);">Services</a></li>
-                        <li class="nav-link">
-                            <p class="nav-star">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </p>
-                            <a href="/" onclick="anchorClick(event);">Resources</a></li>
-                        <li class="nav-link">
-                            <p class="nav-star">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </p>
-                            <a href="#contact" onclick="anchorClick(event);" >Contact</a></li>
-                    </div>
-                </ul>
-            </nav>
+        <!-- navigation  -->
+        <div class="naigation" id="navbar">
+            <div class="common-wrapper">
+                <nav class="navbar">
+                    <!-- LOGO -->
+                    <div class="logo"><img src="/assets/logo.png" alt=""> </div>
+                    <!-- NAVIGATION MENU -->
+                    <ul class="nav-links">
+                        <!-- USING CHECKBOX HACK -->
+                        <input type="checkbox" id="checkbox_toggle" />
+                        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                        <!-- NAVIGATION MENUS -->
+                        <div class="menu" id="menu">
+                            <li class="nav-link active">
+                                <p class="nav-star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </p>
+                                <a  href="/" onclick="anchorClick(event);">Home</a>
+                            </li>
+                            <li class="nav-link">
+                                <p class="nav-star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </p>
+                                <a  href="/About" onclick="anchorClick(event);">About</a></li>
+
+                            <li class="nav-link services">
+                                <p class="nav-star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </p>
+
+                                <a href="/" onclick="anchorClick(event);">Products</a>
+                                <!-- DROPDOWN MENU -->
+                                <!-- <ul class="dropdown">
+                                    <li><a href="/">Dropdown 1 </a></li>
+                                    <li><a href="/">Dropdown 2</a></li>
+                                    <li><a href="/">Dropdown 2</a></li>
+                                    <li><a href="/">Dropdown 3</a></li>
+                                    <li><a href="/">Dropdown 4</a></li>
+                                </ul> -->
+                            </li>
+                            <li class="nav-link">
+                                <p class="nav-star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </p>
+                                <a href="/" onclick="anchorClick(event);">Rentals</a></li>
+                            <li class="nav-link">
+                                <p class="nav-star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </p>
+                                <a href="/" onclick="anchorClick(event);">Services</a></li>
+                            <li class="nav-link">
+                                <p class="nav-star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </p>
+                                <a href="/" onclick="anchorClick(event);">Resources</a></li>
+                            <li class="nav-link">
+                                <p class="nav-star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </p>
+                                <a href="#contact" onclick="anchorClick(event);" >Contact</a></li>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- banner content  -->
+        <div class="banner-content">
+           <div class="common-wrapper">
+                <h1 class="banner-title">Protection</h1>
+                <p class="banner-subtitle">is what we do best</p>
+                <button class="learn-more-btn">Learn More</button>
+           </div>
         </div>
     </header>
+
     <!-- ======== one stop ========= -->
-    <!-- <div class="one-stop">
+    <div class="one-stop">
         <div class="onestop-wrapper">
             <div class="one-stop-left">
                 <img src="/assets/onestop/Assessment_PSD_2.png" alt="">
@@ -107,12 +153,15 @@
                 Whether it’s personal protective equipment, SCBA, fire prevention, gas detection, fall protection or emergency rescue
                 gear, safety in your environment is our goal. Give us a call anytime. We appreciate your business and look forward to
                 hearing from you!</p>
-
-                <button class="learn-more-btn">Learn More</button>
-                <button class="getin-touch-btn">Get In Touch</button>
+                
+                <div class="double-btn">
+                    <button class="btn-left">Learn More</button>
+                    <button class="btn-right">Get In Touch</button>
+                </div>
+                
             </div>
         </div>
-    </div> -->
+    </div>
 
 
     <!-- ========= quick links ==========  -->
@@ -198,6 +247,31 @@
     </section>
 
     <!-- =========== protection ==========  -->
+    <div class="one-stop protection">
+        <div class="onestop-wrapper">
+            <!-- protection content  -->
+            <div class="one-stop-right">
+                <h1>Protection Is What We Do Best</h1>
+                <p>Occupational hazards can be controlled and minimized in even the most dangerous situations: we know what’s needed to
+                outfit your space for hazard detection, safety and response, and are experienced in a range of environments, including
+                gasplants, schools, warehouses, factories, retail outlets, mines, laboratories, and everyday work spaces. <br><br>
+    
+                We work with an elite group of safety equipment suppliers to ensure we can provide you with a range of quality products.
+                Over eighty percent of what we sell is made and sourced locally or domestically. We also recertify what we sell. Without
+                compromise: the personal safety of yourself and those around you deserve nothing less.</p>
+    
+                <div class="double-btn">
+                    <button class="btn-left">Learn More</button>
+                    <button class="btn-right">Get In Touch</button>
+                </div>
+    
+            </div>
+            <!-- protection image  -->
+            <div class="one-stop-left protection-img">
+                <img src="/assets/protection/Assessment_PSD_2 (10).png" alt="">
+            </div>
+        </div>
+    </div>
 
     <!-- =========== instagram =========  -->
     <section class="instagram">
@@ -280,13 +354,14 @@
 
     <!-- <script src="script.js"></script> -->
     <script>
+
+    // prevent links reload 
        function anchorClick(e) {
             //Do some stuff 
             e.preventDefault();
     }  
 
-    // active 
-
+    // navigation active 
     var menu = document.getElementById("menu");
         var links = menu.getElementsByClassName("nav-link");
         for (var i = 0; i < links.length; i++) {
@@ -295,6 +370,20 @@
                 current[0].className = current[0].className.replace(" active", "");
                 this.className += " active";
             });
+        }
+
+    // sticky navigation 
+    window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
         }
     </script>
 </body>

@@ -1,0 +1,59 @@
+/* ========== certification-calibration ==========  */
+.certification-calibration {
+  margin-top: 100px;
+}
+.certification-calibration-wrapper {
+  max-width: 1250px;
+  padding: 0 40px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.certification,
+.calibration {
+  width: 50%;
+  max-width: 568px;
+  text-align: center;
+  padding: 15px;
+}
+.certification img,
+.calibration img {
+  width: 100%;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.certification img:hover,
+.calibration img:hover {
+  transform: scale(0.9);
+  border-radius: 20px;
+}
+.certification h1,
+.calibration h1 {
+  font-size: 40px;
+  color: #404040;
+  font-weight: 700;
+  margin: 50px 0;
+}
+.certification p,
+.calibration p {
+  font-size: 16px;
+  line-height: 30px;
+  color: #707070;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .certification-calibration-wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+  }
+  .certification,
+  .calibration {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}

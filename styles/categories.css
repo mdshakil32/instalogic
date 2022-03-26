@@ -1,0 +1,120 @@
+/* =========== category ========= */
+.category {
+  background: url("/assets/categories/Assessment_PSD_2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 100px;
+  color: white;
+  min-height: 715px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.category-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  padding: 0 30px;
+  max-width: 1690px;
+}
+.category-left {
+}
+.category-left img {
+}
+.category-left-sm {
+  display: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+.category-left-sm h1 {
+  font-size: 90px;
+  line-height: 60px;
+  font-weight: 800;
+  font-family: "Poppins";
+  margin-bottom: 30px;
+}
+.category-left-sm p {
+  text-align: center;
+  margin-top: 0;
+  font-size: 30px;
+  letter-spacing: 25px;
+}
+
+.category-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.single-category {
+  text-align: center;
+  padding: 30px;
+  /* width: 25%; */
+  max-width: 280px;
+  /* background-color: #0515c2; */
+}
+.single-category img {
+  width: 100%;
+  text-align: center;
+  transition: all 0.4s;
+}
+.single-category img:hover {
+  transform: scale(0.9) rotate(45deg);
+  /* box-shadow: 0px 0px 20px red; */
+}
+.single-category h1 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  margin-top: 35px;
+  margin-bottom: 25px;
+}
+.single-category p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  /* font-family: "Muli"; */
+}
+
+@media only screen and (max-width: 992px) {
+  .category-wrapper {
+    gap: 50px;
+    margin-bottom: 80px;
+  }
+  .category-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .single-category img {
+    width: 80%;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .category-wrapper {
+    display: block;
+  }
+  .category-left {
+    display: none;
+  }
+  .category-left-sm {
+    display: block;
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .category-left-sm h1 {
+    font-size: 60px;
+    font-weight: 700;
+    /* margin: 0; */
+  }
+  .category-left-sm p {
+    font-size: 20px;
+    letter-spacing: 15px;
+  }
+  .category-right {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

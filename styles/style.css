@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+/* =========== common styles =========  */
+.common-wrapper {
+  max-width: 1525px;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+button {
+  transition: all 0.4s;
+}
+button:hover {
+  transform: scale(0.9);
+}
+.learn-more-btn,
+.view-more-btn {
+  border: 3px solid #c20505;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 700;
+  /* font-family: "Muli"; */
+  text-align: center;
+  background-color: #c20505;
+  /* margin-right: -4px; */
+  padding: 25px 45px;
+  cursor: pointer;
+}
+.getin-touch-btn {
+  border: 3px solid #c20505;
+  font-size: 20px;
+  color: #c20505;
+  font-weight: 700;
+  /* font-family: "Muli"; */
+  text-align: center;
+  /* background-color: #c20505; */
+  padding: 25px 45px;
+  cursor: pointer;
+}
+.signup-btn {
+  border: 3px solid #ffffff;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 700;
+  /* font-family: "Muli"; */
+  text-align: center;
+  background-color: #c20505;
+  /* padding: 25px 45px; */
+  cursor: pointer;
+  width: 200px;
+  height: 70px;
+}
+.view-more-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.pb-40 {
+  padding-bottom: 40px !important;
+}
+.pb-75 {
+  padding-bottom: 75px !important;
+}
+.text-red {
+  color: #c20505;
+}
+.pr-10 {
+  padding-right: 10px;
+}
+.pr-25 {
+  padding-right: 25px;
+}
+.mt-20-sm {
+  margin-top: 20px;
+}
+
+/* ============ instagram =========  */
+.instagram {
+  background: url("/assets/footer/instagram\ bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+.instagram img {
+  width: 200px;
+}
+
+/* ========= newletter ===========  */
+.newsletter {
+  margin: 0 auto;
+  background-color: #c20505;
+  padding: 25px 0;
+  margin-top: 80px;
+}
+.newsletter-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.newsletter-inner h1 {
+  font-size: 40px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: 700;
+  margin: 0;
+}
+.newsletter-inner p {
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: 500;
+  /* font-family: "Muli"; */
+  /* text-align: center; */
+}
+
+/*  ============= footer ==========  */
+footer {
+  background-color: black;
+  padding: 22px 0;
+}
+.footer-inner {
+  font-size: 11px;
+  line-height: 30px;
+  color: #bbbbbb;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*========== media query =========  */
+
+@media only screen and (max-width: 992px) {
+  /* newsletter  */
+  .newsletter-inner {
+    display: block;
+  }
+  .newsletter-inner p {
+    margin: 50px 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 480px) {
+  .common-wrapper {
+    padding: 0 10px;
+  }
+}

@@ -1,0 +1,58 @@
+/* ============ quick links ===========  */
+.quick-links {
+  margin-top: 100px;
+}
+.quick-links-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.single-quicklink {
+  text-align: center;
+  color: #ffffff;
+  padding: 75px 20px;
+}
+.single-quicklink img {
+  width: 100px;
+}
+.single-quicklink h1 {
+  font-size: 39px;
+  line-height: 20px;
+  font-weight: 700;
+  margin: 40px 0;
+  padding: 10px 0;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.single-quicklink p {
+  line-height: 35px;
+  font-size: 16px;
+}
+
+.single-quicklink:hover h1 {
+  color: black;
+  box-shadow: inset 800px 0 0 0 #ffffff;
+}
+.quicklink-left {
+  background: url("/assets/quicklinks/Assessment1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.quicklink-middle {
+  background: url("/assets/quicklinks/Assessment2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.quicklink-right {
+  background: url("/assets/quicklinks/Assessment3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media only screen and (max-width: 768px) {
+  .quick-links-wrapper {
+    /* display: grid; */
+    grid-template-columns: 1fr;
+  }
+}
